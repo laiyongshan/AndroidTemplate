@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.CopyActivity">
+
+    <com.php.bar.TitleBar
+        android:id="@+id/tb_status_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rightTitle="显示错误"
+        app:title="界面状态案例" />
+
+    <com.php.widget.HintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listCount="10"
+            tools:listitem="@layout/item_copy" />
+
+    </com.php.widget.HintLayout>
+
+</LinearLayout>

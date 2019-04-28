@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+
+    <item name="dialog_id_this" type="id" />
+
+    <item name="dialog_id_click_listener" type="id" />
+
+    <declare-styleable name="TitleBar"><attr name="barStyle">
+        <enum name="light" value="0x10"/>
+        <enum name="night" value="0x20"/>
+        <enum name="transparent" value="0x30"/>
+    </attr><attr format="string" name="title"/><attr format="color" name="titleColor"/><attr format="dimension" name="titleSize"/><attr format="string" name="leftTitle"/><attr format="reference" name="leftIcon"/><attr format="boolean" name="backButton"/><attr format="color" name="leftColor"/><attr format="dimension" name="leftSize"/><attr format="reference|color" name="leftBackground"/><attr format="string" name="rightTitle"/><attr format="reference" name="rightIcon"/><attr format="color" name="rightColor"/><attr format="dimension" name="rightSize"/><attr format="reference|color" name="rightBackground"/><attr format="boolean" name="lineVisible"/><attr format="reference|color" name="lineColor"/><attr format="dimension" name="lineSize"/></declare-styleable>
+    <item name="bar_id_left_view" type="id"/>
+    <item name="bar_id_line_view" type="id"/>
+    <item name="bar_id_main_layout" type="id"/>
+    <item name="bar_id_right_view" type="id"/>
+    <item name="bar_id_title_view" type="id"/>
+    <style name="TitleBarNightStyle" ns1:ignore="ResourceName">
+        <item name="android:background">#FF000000</item>
+        <item name="leftIcon">@mipmap/bar_icon_back_white</item>
+        <item name="leftColor">#CCFFFFFF</item>
+        <item name="titleColor">#EEFFFFFF</item>
+        <item name="rightColor">#CCFFFFFF</item>
+        <item name="lineColor">#FFFFFFFF</item>
+        <item name="leftBackground">@drawable/bar_selector_selectable_black</item>
+        <item name="rightBackground">@drawable/bar_selector_selectable_black</item>
+    </style>
+    <style name="TitleBarTransparentStyle" ns1:ignore="ResourceName">
+        <item name="android:background">#00000000</item>
+        <item name="leftIcon">@mipmap/bar_icon_back_white</item>
+        <item name="leftColor">#FFFFFFFF</item>
+        <item name="titleColor">#FFFFFFFF</item>
+        <item name="rightColor">#FFFFFFFF</item>
+        <item name="lineColor">#00000000</item>
+        <item name="lineVisible">false</item>
+        <item name="leftBackground">@drawable/bar_selector_selectable_transparent</item>
+        <item name="rightBackground">@drawable/bar_selector_selectable_transparent</item>
+    </style>
+
+</resources>
